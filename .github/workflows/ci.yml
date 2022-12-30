@@ -5,7 +5,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
         build_type: [RelWithDebInfo]
     steps:
     - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
     - name: Compiling
       shell: bash
       run: |
-        cd build && ninja
+        cmake --build build
     - name: Running Benchmarks
       shell: bash
       run: |
