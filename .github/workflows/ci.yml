@@ -27,4 +27,4 @@ jobs:
     - name: Running Benchmarks
       shell: bash
       run: |
-        build/howfast
+        build/visitlab

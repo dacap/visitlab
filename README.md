@@ -1,15 +1,8 @@
-# howfast
+# visitlab
 
-A template project to measure and compare the performance of C++
-snippets using the [Google Benchmark](https://github.com/google/benchmark)
-library.
-
-## Features
-
-* It uses [cmake](https://cmake.org/)
-* It uses [cmake FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html)
-  to automatically download Google Benchmark (no need of submodules or
-  handling dependencies)
+This benchmark compares [std::visit()](https://en.cppreference.com/w/cpp/utility/variant/visit)
+vs. using a switch-case of [std::variant::index()](https://en.cppreference.com/w/cpp/utility/variant/index)
+to do a specific task depending on the [std::variant](https://en.cppreference.com/w/cpp/utility/variant) type.
 
 ## License
 

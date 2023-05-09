@@ -16,5 +16,5 @@ FetchContent_Declare(googlebenchmark
   GIT_TAG        main)
 FetchContent_MakeAvailable(googlebenchmark)
 
-add_executable(howfast howfast.cpp)
-target_link_libraries(howfast benchmark)
+add_executable(visitlab visitlab.cpp)
+target_link_libraries(visitlab benchmark)
